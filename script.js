@@ -17,5 +17,10 @@ function verificarPalpite() {
     } else if (palpite < numeroAleatorio){
         messageDiv.textContent = 'Tente novamente. Você chutou o numero $(palpite)';
         messageDiv.style.color = 'orange';
+    }else if (palpite > numeroAleatorio){
+        messageDiv.textContent = 'Tente novamente. Você chutou o numero $(palpite)';
+        messageDiv.style.color = 'orange';
     }
 }
+
+buttonSubmit.addEventListener('click', verificarPalpite);
