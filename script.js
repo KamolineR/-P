@@ -15,10 +15,10 @@ function verificarPalpite() {
             window.location.reload();
         }, 5000)
     } else if (palpite < numeroAleatorio){
-        messageDiv.textContent = 'Tente novamente. Você chutou o numero $(palpite)';
+        messageDiv.textContent = 'Tente um número maior. Você chutou o numero $(palpite)';
         messageDiv.style.color = 'orange';
     }else if (palpite > numeroAleatorio){
-        messageDiv.textContent = 'Tente novamente. Você chutou o numero $(palpite)';
+        messageDiv.textContent = 'Tente um número menor. Você chutou o numero $(palpite)';
         messageDiv.style.color = 'orange';
     }
 }
